@@ -1,0 +1,9 @@
+# builds
+bin/
+
+# docs
+README.md
+.git
+.gitignore
+.dockerignore
+Makefile
