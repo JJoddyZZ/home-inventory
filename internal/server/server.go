@@ -33,6 +33,6 @@ func (s *Server) Shutdown(ctx context.Context) {
 	if err := s.Server.Shutdown(ctx); err != nil {
 		log.Panic().Err(err).Msg("abnormal shutdown")
 	} else {
-		log.Info().Msg("application shutdowned")
+		log.Info().Msg("server shutdowned")
 	}
 }

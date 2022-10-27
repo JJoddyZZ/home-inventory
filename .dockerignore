@@ -1,5 +1,11 @@
+# vscode files
+.vscode
+
 # builds
 bin/
+
+# outputs
+coverage.out
 
 # docs
 README.md

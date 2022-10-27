@@ -6,9 +6,11 @@ run-local: build
 
 # testing
 test:
-	@go test -v -cover -coverprofile=cover.out -race
+	@go test -cover -coverprofile=coverage.out -race ./...
+test-verbose:
+	@go test -v -cover -coverprofile=coverage.out -race ./...
 display-cover:
-	@go tool cover -html=cover.out
+	@go tool cover -html=coverage.out
 
 # container deployment
 docker-build:
